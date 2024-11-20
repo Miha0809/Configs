@@ -27,9 +27,12 @@ for f in ~/.config/zshrc/*; do
     fi
 done
 
+# System
 alias copy="wl-copy"
-alias token="echo $GIT | copy"
 alias q="exit"
+alias off="shutdown"
+
+# IDE
 alias n="nvim ."
 
 # translate
@@ -45,6 +48,7 @@ alias rn="bld && run"
 
 
 # GIT
+alias token="echo $GIT | copy"
 alias gs="git status"
 alias ga="git add ."
 
