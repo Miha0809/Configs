@@ -1,3 +1,4 @@
+
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
 local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -7,6 +8,7 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
@@ -14,8 +16,6 @@ if not pcall(require, "lazy") then
   vim.fn.getchar()
   vim.cmd.quit()
 end
-
-vim.keymap.set('i', 'jk', [[<C-\><C-n>]])
 
 require "lazy_setup"
 require "polish"

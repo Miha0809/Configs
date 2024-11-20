@@ -13,9 +13,9 @@ require("lazy").setup({
   },
   { import = "community" },
   { import = "plugins" },
-  } --[[@as LazySpec]], {
+} --[[@as LazySpec]], {
   -- Configure any other `lazy.nvim` configuration options here
-  install = { colorscheme = { "astrodark", "habamax" } },
+  install = { colorscheme = { "astrotheme", "habamax" } },
   ui = { backdrop = 100 },
   performance = {
     rtp = {
@@ -28,9 +28,5 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
-  },
-  {
-    'wakatime/vim-wakatime',
-    lazy = false
   },
 } --[[@as LazyConfig]])
