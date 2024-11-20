@@ -30,14 +30,25 @@ done
 alias copy="wl-copy"
 alias token="echo $GIT | copy"
 alias q="exit"
+alias n="nvim ."
+
+# translate
+alias en="trans :en"
+alias ua="trans :uk"
+alias pl="trans :pl"
+
+
+# dotnet
 alias run="dotnet run"
 alias bld="dotnet build"
 alias rn="bld && run"
+
 
 # GIT
 alias gs="git status"
 alias ga="git add ."
 
+export GIT=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
 export PATH="$PATH:$HOME/.dotnet/tools"
 
 # -----------------------------------------------------
