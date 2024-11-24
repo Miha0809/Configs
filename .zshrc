@@ -35,7 +35,7 @@ alias off="shutdown"
 # IDE
 alias n="nvim ."
 
-# translate
+# Translate
 alias en="trans :en"
 alias ua="trans :uk"
 alias pl="trans :pl"
@@ -52,7 +52,6 @@ alias token="echo $GIT | copy"
 alias gs="git status"
 alias ga="git add ."
 
-export GIT=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
 export PATH="$PATH:$HOME/.dotnet/tools"
 
 # -----------------------------------------------------
