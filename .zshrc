@@ -48,7 +48,7 @@ alias rn="bld && run"
 
 
 # GIT
-alias token="echo $GIT | copy"
+alias token="copy $(echo $GIT)"
 alias gs="git status"
 alias ga="git add ."
 
