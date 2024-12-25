@@ -27,6 +27,10 @@ for f in ~/.config/zshrc/*; do
     fi
 done
 
+# Docker
+alias up="docker-compose up --build"
+alias down="docker-compose down --rmi all"
+
 # System
 alias copy="wl-copy"
 alias q="exit"
