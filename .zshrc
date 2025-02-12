@@ -1,3 +1,9 @@
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="amuse"
+# ZSH_THEME="dpoggi"
+# ZSH_THEME="fletcherm"
+# ZSH_THEME="jaischeema"
+
 # Docker
 alias up="docker-compose up --build"
 alias down="docker-compose down --rmi all"
@@ -26,3 +32,9 @@ alias gs="git status"
 alias ga="git add ."
 
 export PATH="$PATH:$HOME/.dotnet/tools"
+
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
