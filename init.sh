@@ -34,6 +34,7 @@ git clone https://github.com/Miha0809/Configs.git
 cd Configs
 mv nvim ~/.config/
 mv ranger ~/.config
+mv .zshrc ~/
 
 # Create personal folders
 mkdir -p ~/Documents/Mark/Programming/Android
