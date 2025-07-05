@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S git ranger htop inxi acpi neovim zip unzip telegram-desktop translate-shell zsh xclip ttf-jetbrains-mono-nerd docker docker-compose ttf-jetbrains-mono-nerd curl nodejs npm openssh jdk-openjdk dotnet-runtime dotnet-sdk aspnet-runtime
+sudo pacman -S git ranger htop inxi acpi neovim zip unzip telegram-desktop translate-shell zsh xclip ttf-jetbrains-mono-nerd docker docker-compose curl nodejs npm openssh jdk-openjdk dotnet-runtime dotnet-sdk aspnet-runtime go
 
 # setting the docker
 sudo groupadd docker
@@ -18,15 +18,8 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-# Install the vscode and the android-studio from a AUR
-yay -S visual-studio-code-bin android-studio
-
-# Install the SDKMan
-curl -s "https://get.sdkman.io" | bash
-source "/home/mark/.sdkman/bin/sdkman-init.sh"
-
-# Install a kotlin from SDKMan
-sdk install kotlin
+# Install the vscode and the zoom
+yay -S visual-studio-code-bin zoom
 
 # Move config files to .config
 cd ~/Downloads/
@@ -37,7 +30,6 @@ mv ranger ~/.config
 mv .zshrc ~/
 
 # Create personal folders
-mkdir -p ~/Documents/Mark/Programming/Android
 cd ~/Documents/Mark/Programming
 git clone https://github.com/Miha0809/AutoSelect.git
 git clone https://github.com/Miha0809/react-pizza.git
@@ -46,5 +38,3 @@ git clone https://github.com/Miha0809/react-pizza.git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-echo "INSTALL A .NET"
