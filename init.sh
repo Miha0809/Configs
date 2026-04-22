@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S git ranger htop inxi acpi neovim zip unzip telegram-desktop translate-shell zsh xclip ttf-jetbrains-mono-nerd docker docker-compose curl nodejs npm openssh jdk-openjdk dotnet-runtime dotnet-sdk aspnet-runtime go
+sudo pacman -S git ranger htop inxi acpi neovim zip unzip telegram-desktop translate-shell zsh xclip ttf-jetbrains-mono-nerd docker docker-compose curl nodejs npm openssh go
 
 # setting the docker
 sudo groupadd docker
