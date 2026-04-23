@@ -86,6 +86,18 @@
     "github.copilot.enable": {
         "*": false
     },
-    "editor.fontSize": 15,
     "chat.viewSessions.orientation": "stacked",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.xml": "default"
+    },
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "claudeCode.preferredLocation": "panel",
+    "workbench.settings.applyToAllProfiles": [
+        
+    ],
+    "claudeCode.environmentVariables": [
+        
+    ],
 }
